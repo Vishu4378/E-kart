@@ -42,13 +42,13 @@ console.log(products)
                       src={product.images[0]}
                       className={"w-28 mx-5 object-contain rounded-md  "}
                     ></img>
-                    <h2>{product.title}</h2>
+                    <h2 className="my-auto">{product.title}</h2>
                   </td>
                   <td className="px-8">{product.price}</td>
            
                   <td className="px-8">{ Kartdata[product.id] }</td>
                   
-                  <td className="px-28">{product.stock * product.price}</td>
+                  <td className="px-28">{Kartdata[product.id] * product.price}</td>
                 </tr>
               );
             })}
