@@ -7,7 +7,7 @@ function Navbar({ productCount }) {
       <div className=" p-3 mx-auto max-w-5xl  flex justify-between">
         <img
           className="w-16  object-contain "
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png"
+          src="https://gumlet.assettype.com/afaqs%2F2022-08%2F69acc390-3578-4527-8355-9f443f4749e3%2FEkar.jpg?rect=0%2C0%2C1600%2C900&w=700&dpr=1.5"
         />
         <Link to={"/kart"} >
           <div className="flex flex-col items-center  relative p-1 ">
