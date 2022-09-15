@@ -25,11 +25,11 @@ function App() {
 	const newcart = Object.keys(cart).reduce((previous, current) => {
 		return previous + cart[current];
 	}, 0)
+	// console.log("keys",Object.keys(cart))
 	return (
 		<>
 			<Navbar productCount={newcart} ></Navbar>
-			<div className="grow-1 flex flex-col">
-
+			<div className="grow-1 flex flex-1 flex-col">
 				<Routes>
 					<Route index element={<Productlistpage />}></Route>
 					<Route path="/kart" element={<Kartpage Kartdata={savedDataObj} />}></Route>

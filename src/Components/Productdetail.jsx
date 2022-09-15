@@ -47,9 +47,9 @@ function Productdetail({ addToCart }) {
 	console.log("value count", count)
 	return (
 		<>
-			<div className="flex grow-1 flex-col ml-9 mt-5">
+			<div className="flex grow-1 flex-col m-auto sm:ml-7 sm:m-0 mt-5">
 				<Link className="w-8" to="/"><img src="https://img.icons8.com/fluency-systems-filled/48/000000/arrow-pointing-left.png" /></Link>
-				<div className="flex flex-col justify-center  p-4 w-1/4 bg-gray-100  rounded shadow">
+				<div className="flex flex-col justify-center  p-4 max-w-64 sm:w-1/2 md:w-1/3 lg:w-1/4 bg-gray-100  rounded shadow">
 					<img src={product.thumbnail} className="w-60" />
 					<div className="ml-2 ">
 						<div className="text-2xl font-semibold">{product.title}</div>
@@ -65,7 +65,7 @@ function Productdetail({ addToCart }) {
 				</div>
 
 			</div>
-			<div className="flex justify-between m-20 ">
+			<div className="flex justify-between m-4 sm:m-20 ">
 				<Link className="font-bold text-sm" to={"/products/" + (sku - 1)}><img src="https://img.icons8.com/metro/26/000000/long-arrow-left.png" />Previous</Link>
 				<Link to={"/products/" + (sku + 1)} className="font-bold text-sm"><img src="https://img.icons8.com/metro/26/000000/long-arrow-right.png" />Next</Link>
 			</div>

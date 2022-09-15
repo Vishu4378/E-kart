@@ -55,9 +55,9 @@ function Productlistpage() {
 
 			</div>
 			<div className="bg-violet-300 max-py-8">
-				<div className="p-2 sm:p-4">
-					<div className="m-4 md:p-8 bg-white max-w-5xl lg:mx-auto  boder border-white">
-						<div className="md:flex flex-row justify-between mb-4 ">
+				<div className=" sm:p-4">
+					<div className="m-2 sm:m-4 sm:p-8 bg-white max-w-5xl lg:mx-auto  boder border-white">
+						<div className=" flex flex-col items-center sm:flex-row justify-between m-4 ">
 							<div className="ml-2">
 								<input
 									value={query}

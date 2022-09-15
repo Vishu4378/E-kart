@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 function Product({ photo, category, title, rating, price, id }) {
 	return (
 		<div>
-			<div className=" max-w-80  bg-violet-50 ">
-
+			<div className=" max-w-80  bg-violet-50 hover:scale-105  transition-transform duration-300  ">
+			<Link to={"/products/" + id}> 
 				<img src={photo} className="w-full object-cover aspect-video  border border-white " />
 
 
@@ -19,6 +19,7 @@ function Product({ photo, category, title, rating, price, id }) {
 					<Link className="text-white border rounded-xl bg-violet-800 font-semibold text-xs px-3  " to={"/products/" + id}> view detail</Link>
 
 				</div>
+			</Link>
 			</div>
 		</div>
 	);

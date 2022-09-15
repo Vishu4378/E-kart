@@ -3,7 +3,7 @@ import Product from './Product';
 
 function ProductShow({ products }) {
 	return (
-		<div className="space-y-3 sm:space-y-0 sm:m-0 sm:grid gap-5 grid-cols-3 ">
+		<div className="space-y-3 sm:space-y-0 sm:m-0 sm:grid gap-7 grid-cols-3 ">
 			{products.map(function(item) {
 				return (
 
