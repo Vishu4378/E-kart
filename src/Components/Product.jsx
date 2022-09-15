@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Product({ photo, category, title, rating, price, id }) {
 	return (
 		<div>
-			<div className=" max-w-80  bg-violet-50 hover:scale-105  transition-transform duration-300  ">
+			<div className=" max-w-80  bg-violet-50 hover:scale-105  hover:shadow-xl   transition-transform duration-300  ">
 			<Link to={"/products/" + id}> 
 				<img src={photo} className="w-full object-cover aspect-video  border border-white " />
 
